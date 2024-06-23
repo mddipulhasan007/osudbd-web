@@ -40,12 +40,12 @@
   <!-- Helpers -->
   <script src="{{ asset('assets/admin/vendor/js/helpers.js') }}"></script>
   <script src="{{ asset('assets/admin/js/config.js') }}"></script>
-  <script src="https://cdn.tiny.cloud/1/b9oxw0g8mo7sqcdnc1g9ta99tqdd9ve9izb9ttjsbdb7jul5/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <!-- <script src="https://cdn.tiny.cloud/1/b9oxw0g8mo7sqcdnc1g9ta99tqdd9ve9izb9ttjsbdb7jul5/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   <script>
     tinymce.init({
       selector: '#mytextarea'
     });
-  </script>
+  </script> -->
 
   <style>
     li.menu-item.open ul.menu-sub li.active{
@@ -137,21 +137,21 @@ $authUser = auth()->user();
             </li>
 
             <!-- Forms & Tables -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Appearence</span></li>
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Appearence</span></li> -->
             <!-- Forms -->
-            <li class="menu-item {{ request()->is('admin/header', 'admin/footer') ? 'active' : '' }}">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <!-- <li class="menu-item {{ request()->is('admin/header', 'admin/footer') ? 'active' : '' }}"> -->
+                <!-- <a href="javascript:void(0);" class="menu-link menu-toggle">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Site Settings</div>
-                </a>
+                </a> -->
                 <ul class="menu-sub">
-                  @if(in_array($authUser->role_id,[1,3]))
+                  <!-- @if(in_array($authUser->role_id,[1,3]))
                     <li class="menu-item {{ request()->is('admin/header') ? 'active' : '' }}">
                         <a href="{{ url('admin/header') }}" class="menu-link">
                             <div data-i18n="Vertical Form">Header</div>
                         </a>
                     </li>
-                  @endif
+                  @endif -->
 
 {{--                    @if(in_array($authUser->role_id,[2,3]))--}}
 {{--                        --}}
@@ -166,33 +166,33 @@ $authUser = auth()->user();
                       <div data-i18n="Horizontal Form">Sliders</div>
                       </a>
                   </li> -->
-                  @if(in_array($authUser->role_id,[1,3]))
+                  <!-- @if(in_array($authUser->role_id,[1,3]))
                     <li class="menu-item {{ request()->is('admin/footer') ? 'active' : '' }}">
                         <a href="{{ url('admin/footer') }}" class="menu-link">
                         <div data-i18n="Horizontal Form">Footer</div>
                         </a>
                     </li>
-                  @endif
+                  @endif -->
                 </ul>
-            </li>
+            <!-- </li> -->
           
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Banner Slider</span></li>
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Banner Slider</span></li> -->
             <!-- Forms -->
-            <li class="menu-item {{ request()->is('admin/banners') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/banners') ? 'active' : '' }}">
                 <a href="{{ url('admin/banners') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Manage Sliders</div>
                 </a>
-            </li>
+            </li> -->
             <!-- Tables -->
-            @if(in_array($authUser->role_id,[1,3]))
+            <!-- @if(in_array($authUser->role_id,[1,3]))
               <li class="menu-item {{ request()->is('admin/addnewbanner') ? 'active' : '' }}">
                   <a href="{{ url('admin/addnewbanner') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-table"></i>
                   <div data-i18n="Tables">Add New Slider</div>
                   </a>
               </li>
-            @endif  
+            @endif   -->
 
             <!-- <li class="menu-item d-none">
                 <a href="{{ url('admin/setmail') }}" class="menu-link">
@@ -201,9 +201,9 @@ $authUser = auth()->user();
                 </a>
             </li> -->
 
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Home About/Service</span></li>
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Home About/Service</span></li> -->
             <!-- Forms -->
-            @if(in_array($authUser->role_id,[1,3]))
+            <!-- @if(in_array($authUser->role_id,[1,3]))
             <li class="menu-item {{ request()->is('admin/aboutcontent') ? 'active' : '' }}">
                 <a href="{{ url('admin/aboutcontent') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
@@ -215,63 +215,89 @@ $authUser = auth()->user();
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Service in Home</div>
                 </a>
-            </li>
+            </li> -->
             <!-- Tables -->
-            <li class="menu-item {{ request()->is('admin/aboutpage') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/aboutpage') ? 'active' : '' }}">
                 <a href="{{ url('admin/aboutpage') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">About Page</div>
                 </a>
             </li>
-            @endif
+            @endif -->
 
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Products & Services</span></li>
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Products & Services</span></li> -->
             <!-- Forms -->
-            <li class="menu-item {{ request()->is('admin/services') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/services') ? 'active' : '' }}">
                 <a href="{{ url('admin/services') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Manage Services</div>
                 </a>
+            </li> -->
+            <!-- Tables -->
+
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Our Products</span></li>
+            <!-- Forms -->
+            <li class="menu-item {{ request()->is('admin/products') ? 'active' : '' }}">
+                <a href="{{ url('admin/products') }}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-detail"></i>
+                  <div data-i18n="Form Layouts">Manage Products</div>
+                </a>
             </li>
             <!-- Tables -->
+
             @if(in_array($authUser->role_id,[1,3]))
-            <li class="menu-item {{ request()->is('admin/addservice') ? 'active' : '' }}">
-                <a href="{{ url('admin/addservice') }}" class="menu-link">
+            <li class="menu-item {{ request()->is('admin/addproduct') ? 'active' : '' }}">
+                <a href="{{ url('admin/addproduct') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
-                <div data-i18n="Tables">Add New Services</div>
+                <div data-i18n="Tables">Add New Product</div>
                 </a>
             </li>
             @endif
 
-            <li class="menu-item {{ request()->is('admin/categories') ? 'active' : '' }}">
-                <a href="{{ url('admin/categories') }}" class="menu-link">
+            <li class="menu-item {{ request()->is('admin/productcategories') ? 'active' : '' }}">
+                <a href="{{ url('admin/productcategories') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
-                <div data-i18n="Tables">Manage Category</div>
+                <div data-i18n="Tables">Manage Product Cat.</div>
                 </a>
             </li>
             @if(in_array($authUser->role_id,[1,3]))
-            <li class="menu-item {{ request()->is('admin/addcategory') ? 'active' : '' }}">
-                <a href="{{ url('admin/addcategory') }}" class="menu-link">
+            <li class="menu-item {{ request()->is('admin/addproductcategory') ? 'active' : '' }}">
+                <a href="{{ url('admin/addproductcategory') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
-                <div data-i18n="Tables">Add New Category</div>
+                <div data-i18n="Tables">Add Product Category</div>
                 </a>
             </li>
             @endif
 
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Projects & Category</span></li>
+            <li class="menu-item {{ request()->is('admin/producttypes') ? 'active' : '' }}">
+                <a href="{{ url('admin/producttypes') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-table"></i>
+                <div data-i18n="Tables">Manage Product Type </div>
+                </a>
+            </li>
+            @if(in_array($authUser->role_id,[1,3]))
+            <li class="menu-item {{ request()->is('admin/addproducttype') ? 'active' : '' }}">
+                <a href="{{ url('admin/addproducttype') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-table"></i>
+                <div data-i18n="Tables">Add Product Type </div>
+                </a>
+            </li>
+            @endif
+
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Manufactures & Category</span></li> -->
             <!-- Forms -->
-            <li class="menu-item {{ request()->is('admin/projects') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/projects') ? 'active' : '' }}">
                 <a href="{{ url('admin/projects') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
-                  <div data-i18n="Form Layouts">Manage Project</div>
+                  <div data-i18n="Form Layouts">Manage Manufacture</div>
                 </a>
-            </li>
+            </li> -->
             <!-- Tables -->
-            @if(in_array($authUser->role_id,[1,3]))
+            <!-- @if(in_array($authUser->role_id,[1,3]))
             <li class="menu-item {{ request()->is('admin/addproject') ? 'active' : '' }}">
                 <a href="{{ url('admin/addproject') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
-                <div data-i18n="Tables">Add New Project</div>
+                <div data-i18n="Tables">Add New Manufacture</div>
                 </a>
             </li>
             @endif
@@ -289,7 +315,7 @@ $authUser = auth()->user();
                 <div data-i18n="Tables">Add New P. Category</div>
                 </a>
             </li>
-            @endif
+            @endif -->
 
             <li class="menu-header small text-uppercase"><span class="menu-header-text">PARTNERS / BRANDS</span></li>
             <!-- Forms -->
@@ -327,43 +353,43 @@ $authUser = auth()->user();
             </li>
             @endif
 
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Media & News</span></li>
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Media & News</span></li> -->
             <!-- Forms -->
-            <li class="menu-item {{ request()->is('admin/newses') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/newses') ? 'active' : '' }}">
                 <a href="{{ url('admin/newses') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Manage News</div>
                 </a>
-            </li>
+            </li> -->
             
             <!-- Tables -->
-            @if(in_array($authUser->role_id,[1,3]))
+            <!-- @if(in_array($authUser->role_id,[1,3]))
             <li class="menu-item {{ request()->is('admin/addnewnews') ? 'active' : '' }}">
                 <a href="{{ url('admin/addnewnews') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Add New News</div>
                 </a>
             </li>
-            @endif
+            @endif -->
 
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Our Videos</span></li>
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Our Videos</span></li> -->
             <!-- Forms -->
-            <li class="menu-item {{ request()->is('admin/videos') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/videos') ? 'active' : '' }}">
                 <a href="{{ url('admin/videos') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Manage Videos</div>
                 </a>
-            </li>
+            </li> -->
             
             <!-- Tables -->
-            @if(in_array($authUser->role_id,[1,3]))
+            <!-- @if(in_array($authUser->role_id,[1,3]))
             <li class="menu-item {{ request()->is('admin/addnewvideo') ? 'active' : '' }}">
                 <a href="{{ url('admin/addnewvideo') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Add New Video</div>
                 </a>
             </li>
-            @endif
+            @endif -->
 
             <li class="menu-header small text-uppercase">
                 <span class="menu-header-text">Users Setting</span>
@@ -391,37 +417,37 @@ $authUser = auth()->user();
 
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Notices</span></li>
             <!-- Forms -->
-            <li class="menu-item {{ request()->is('admin/notices') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/notices') ? 'active' : '' }}">
                 <a href="{{ url('admin/notices') }}" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Manage Notice</div>
                 </a>
-            </li>
+            </li> -->
             <!-- Tables -->
             @if(in_array($authUser->role_id,[1,3]))
-            <li class="menu-item {{ request()->is('admin/addnewnotice') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/addnewnotice') ? 'active' : '' }}">
                 <a href="{{ url('admin/addnewnotice') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Add New Notice</div>
                 </a>
-            </li>
+            </li> -->
             @endif
             <!-- Tables -->
-            <li class="menu-item {{ request()->is('admin/contacts') ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ request()->is('admin/contacts') ? 'active' : '' }}">
                 <a href="{{ url('admin/contacts') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-table"></i>
                 <div data-i18n="Tables">Contact Messages</div>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Tables -->
-            <li class="menu-item border-top">
-                <a href="http://stonytrack.com/dbbackup/stonytra_db.zip" class="menu-link">
+            <!-- <li class="menu-item border-top">
+                <a href="http://Osudbd.com/dbbackup/stonytra_db.zip" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-download"></i>
                 <div data-i18n="Tables"> Database Download</div>
                 </a>
-            </li>
-            </ul>
+            </li> -->
+          </ul>
         </aside>
         <!-- / Menu -->
 
@@ -478,7 +504,7 @@ $authUser = auth()->user();
                           </div>
                         </div>
                         <div class="flex-grow-1">
-                          <span class="fw-semibold d-block">Stonytrack</span>
+                          <span class="fw-semibold d-block">Osudbd</span>
                           <small class="text-muted">Admin</small>
                         </div>
                       </div>

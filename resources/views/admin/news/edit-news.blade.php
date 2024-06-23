@@ -36,7 +36,7 @@
                     <div class="col-sm-10">
                         <input class="form-control" type="file" name="news_image" id="formFilethumb" onchange="previewThumbnail(event)">
                         <div class="brand-logo img-preview mt-3">
-                            <img id="thumb_preview" loading="lazy" src="{{ isset($newsPath) ? asset('storage/' . $newsPath) : asset('assets/admin/img/no-photo.png') }}" width="100%" alt="Stonytrack">
+                            <img id="thumb_preview" loading="lazy" src="{{ isset($newsPath) ? asset('storage/' . $newsPath) : asset('assets/admin/img/no-photo.png') }}" width="100%" alt="Osudbd">
                         </div>
                     </div>
                 </div>

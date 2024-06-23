@@ -5,7 +5,7 @@
   <!-- Content -->
 
   <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Add New Project</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Add New Manufacture</h4>
 
     <!-- Basic Layout & Basic with Icons -->
     <form method="post" action="{{ route('addproject') }}" enctype="multipart/form-data">
@@ -16,12 +16,12 @@
         <div class="col-xxl">
           <div class="card mb-4">
             <div class="card-header d-flex align-items-center justify-content-between">
-              <h5 class="mb-0">Add Project</h5>
-              <small class="text-muted float-end"><a class="btn btn-primary" href="{{ url('admin/projects') }}">Manage Services</a></small>
+              <h5 class="mb-0">Add Manufacture</h5>
+              <small class="text-muted float-end"><a class="btn btn-primary" href="{{ url('admin/projects') }}">Manage Products</a></small>
             </div>
             <div class="card-body img-item-sec">
                 <div class="row mb-3">
-                  <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Project Title</label>
+                  <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Manufacture Title</label>
                   <div class="col-sm-10">
                     <div class="input-group input-group-merge">
                       <span class="input-group-text"><i class="bx bx-text"></i></span>
@@ -31,7 +31,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <label class="col-sm-12 form-label" for="basic-icon-default-message">Project Content</label>
+                  <label class="col-sm-12 form-label" for="basic-icon-default-message">Manufacture Content</label>
                   <div class="col-sm-12">
                         <textarea id="mytextarea" name="content">Content here...</textarea>
                   </div>
@@ -46,7 +46,7 @@
                                 loading="lazy"
                                 src="{{ isset($featurePath) ? asset('storage/' . $featurePath) : asset('assets/admin/img/no-photo.png') }}"
                                 width="100%"
-                                alt="Stonytrack"
+                                alt="Osudbd"
                             />
                         </div>
                     </div>

@@ -12,9 +12,9 @@ $authUser = auth()->user();
     <!-- Basic Bootstrap Table -->
     <div class="card">
     <div class="card-header d-flex align-items-center justify-content-between">
-      <h5 class="card-header">Manage Project Categories</h5>
+      <h5 class="card-header">Manage Manufacture Categories</h5>
       @if(in_array($authUser->role_id,[1,3]))
-      <small class="text-muted float-end"><a class="btn btn-primary" href="{{ url('admin/addprojectcategory') }}">Add New Project Category</a></small>
+      <small class="text-muted float-end"><a class="btn btn-primary" href="{{ url('admin/addprojectcategory') }}">Add New Manufacture Category</a></small>
       @endif
     </div>
       <div class="table-responsive text-nowrap" style="min-height:300px;">

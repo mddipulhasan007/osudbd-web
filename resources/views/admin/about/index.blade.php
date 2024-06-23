@@ -46,7 +46,7 @@
                           loading="lazy"
                           src="{{ $aboutPage && $aboutPage->bdcmb_banner_img ? asset('storage/' . $aboutPage->bdcmb_banner_img) : asset('assets/admin/img/no-photo.png') }}"
                           width="100%" height="300px"
-                          alt="Stonytrack"
+                          alt="Osudbd"
                       />
                     </div>
                   </div>
@@ -74,12 +74,12 @@
 
                 <small class="text-muted float-end"> About Skill Counts Add</small>
                 <div class="row mb-3 mt-4">
-                  <label class="col-sm-3 col-form-label" for="basic-icon-default-email">Total Projects Add</label>
+                  <label class="col-sm-3 col-form-label" for="basic-icon-default-email">Total Manufacture Add</label>
                   <div class="col-sm-9">
                     <div class="input-group input-group-merge">
                       <span class="input-group-text"><i class="bx bx-text"></i></span>
-                      <input name="total_projects_count" type="text" id="basic-icon-default-email" class="form-control" placeholder="Total Projects Count"
-                        aria-label="Total Projects" aria-describedby="basic-icon-default-email2" value="{{ $aboutPage->total_projects_count }}" />
+                      <input name="total_projects_count" type="text" id="basic-icon-default-email" class="form-control" placeholder="Total Manufacture Count"
+                        aria-label="Total Manufacture" aria-describedby="basic-icon-default-email2" value="{{ $aboutPage->total_projects_count }}" />
                     </div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-sm-3 col-form-label" for="basic-icon-default-email">Running of Project</label>
+                  <label class="col-sm-3 col-form-label" for="basic-icon-default-email">Running of Manufacture</label>
                   <div class="col-sm-9">
                     <div class="input-group input-group-merge">
                       <span class="input-group-text"><i class="bx bx-text"></i></span>
@@ -134,7 +134,7 @@
                           loading="lazy"
                           src="{{ $aboutPage && $aboutPage->about_img ? asset('storage/' . $aboutPage->about_img) : asset('assets/admin/img/no-photo.png') }}"
                           width="100%"
-                          alt="Stonytrack"
+                          alt="Osudbd"
                       />
                     </div>
                   </div>

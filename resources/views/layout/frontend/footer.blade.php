@@ -5,9 +5,9 @@
             <div class="col-lg-4 col-md-6 footer-widget footer-about">
               <h3 class="widget-title">About Us</h3>
                 @if($footer && $footer->logo)
-                  <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('storage/' . $footer->logo) }}" alt="Stonytrack">
+                  <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('storage/' . $footer->logo) }}" alt="Osudbd">
                 @else
-                  <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('assets/images/logo/logo-footer.png') }}" alt="Stonytrack">
+                  <img loading="lazy" width="200px" class="footer-logo" src="{{ asset('assets/images/logo/logo-footer.png') }}" alt="Osudbd">
                 @endif
       
               {!! $footer->about_txt ?? '' !!}
@@ -38,7 +38,7 @@
                 <br>
                 <ul class="list-arrow">
                   <span class="text-left">
-                      Web Mail URL Link: <a style="color:#fff; hover:#EFB601 !important;" class="link web-link" target="_blank" href="https://stonytrack.com/webmail"> stonytrack.com/webmail</a>
+                      Web Mail URL Link: <a style="color:#fff; hover:#EFB601 !important;" class="link web-link" target="_blank" href="https://Osudbd.com/webmail"> Osudbd.com/webmail</a>
                   </span>
                 </ul>
               </div>
@@ -47,9 +47,9 @@
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
               <h3 class="widget-title">Services</h3>
               <ul class="list-arrow">
-              @foreach($categories->take(6) as $category)
+              <!-- @foreach($categories->take(6) as $category)
                   <li><a href="{{ route('categories.show', $category->slug) }}">{{ $category->name }}</a></li>
-              @endforeach
+              @endforeach -->
               </ul>
             </div><!-- Col end -->
           </div><!-- Row end -->

@@ -30,7 +30,7 @@
                         loading="lazy"
                         src="{{ isset($logoPath) ? asset('storage/' . $logoPath) : asset('assets/admin/img/no-photo.png') }}"
                         width="100%"
-                        alt="Stonytrack"
+                        alt="Osudbd"
                     />
                     </div>
                   </div>

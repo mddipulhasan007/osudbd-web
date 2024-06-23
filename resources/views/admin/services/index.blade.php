@@ -7,14 +7,14 @@ $authUser = auth()->user();
   <!-- Content -->
 
   <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All /</span> Service Manage</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All /</span> Manage</h4>
 
     <!-- Basic Bootstrap Table -->
     <div class="card">
     <div class="card-header d-flex align-items-center justify-content-between">
-      <h5 class="card-header">Manage Services</h5>
+      <h5 class="card-header">Manage Products</h5>
       @if(in_array($authUser->role_id,[1,3]))
-      <small class="text-muted float-end"><a class="btn btn-primary" href="{{ url('admin/addservice') }}">Add New Service</a></small>
+      <small class="text-muted float-end"><a class="btn btn-primary" href="{{ url('admin/addservice') }}">Add New Product</a></small>
       @endif
     </div>
       <div class="table-responsive text-nowrap" style="min-height:300px;">

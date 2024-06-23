@@ -6,12 +6,11 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="banner-heading">
-                <h1 class="banner-title">Project</h1>
+                <h1 class="banner-title">Manufacture</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Project</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Projects Single</li>
+                    <li class="breadcrumb-item active" aria-current="page">Manufacture Single</li>
                   </ol>
                 </nav>
               </div>
@@ -49,7 +48,7 @@
             <h5 class="column-title mb-1">Manual Fire Protection System: <span class="small-fs">Fire Standpipe & Hydrant
                 System</span>
             </h5>
-            <p>Stonytrack supplied, installed, serve and maintained of all types of fire protection solution for
+            <p>Osudbd supplied, installed, serve and maintained of all types of fire protection solution for
               passive, active and manual fire protection as per NFPA, BNBC and IFC.
             </p>
             <ul class="project-info list-unstyled">

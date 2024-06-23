@@ -54,6 +54,21 @@ Route::any('admin/addcategory', [App\Http\Controllers\AdminController::class, 'a
 Route::any('admin/editcategory/{id}', [App\Http\Controllers\AdminController::class, 'editcategory'])->name('editcategory');
 Route::any('admin/removecategory/{id}', [App\Http\Controllers\AdminController::class, 'removecategory'])->name('removecategory');
 
+Route::any('admin/products', [App\Http\Controllers\AdminController::class, 'products'])->name('products');
+Route::any('admin/addproduct', [App\Http\Controllers\AdminController::class, 'addproduct'])->name('addproduct');
+Route::any('admin/editproduct/{id}', [App\Http\Controllers\AdminController::class, 'editproduct'])->name('editproduct');
+Route::any('admin/removeproduct/{id}', [App\Http\Controllers\AdminController::class, 'removeproduct'])->name('removeproduct');
+Route::any('admin/productcategories', [App\Http\Controllers\AdminController::class, 'productcategories'])->name('productcategories');
+Route::any('admin/addproductcategory', [App\Http\Controllers\AdminController::class, 'addproductcategory'])->name('addproductcategory');
+Route::any('admin/editproductcategory/{id}', [App\Http\Controllers\AdminController::class, 'editproductcategory'])->name('editproductcategory');
+Route::any('admin/removeproductcategory/{id}', [App\Http\Controllers\AdminController::class, 'removeproductcategory'])->name('removeproductcategory');
+
+Route::any('admin/producttypes', [App\Http\Controllers\AdminController::class, 'producttypes'])->name('producttypes');
+Route::any('admin/addproducttype', [App\Http\Controllers\AdminController::class, 'addproducttype'])->name('addproducttype');
+Route::any('admin/editproducttype/{id}', [App\Http\Controllers\AdminController::class, 'editproducttype'])->name('editproducttype');
+Route::any('admin/removeproducttype/{id}', [App\Http\Controllers\AdminController::class, 'removeproducttype'])->name('removeproducttype');
+
+
 Route::any('admin/projects', [App\Http\Controllers\AdminController::class, 'projects'])->name('projects');
 Route::any('admin/addproject', [App\Http\Controllers\AdminController::class, 'addproject'])->name('addproject');
 Route::any('admin/editproject/{id}', [App\Http\Controllers\AdminController::class, 'editproject'])->name('editproject');

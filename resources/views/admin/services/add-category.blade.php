@@ -5,7 +5,7 @@
   <!-- Content -->
 
   <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Add New Service</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Add New Product</h4>
 
     <!-- Basic Layout & Basic with Icons -->
     <h2>Add Category</h2>
@@ -28,7 +28,7 @@
                         loading="lazy"
                         src="{{ asset('assets/admin/img/no-photo.png') }}"
                         width="200" height="200"
-                        alt="Stonytrack"
+                        alt="Osudbd"
                     />
                 </div>
             </div>

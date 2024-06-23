@@ -27,7 +27,7 @@
                     <div class="col-sm-9">
                     <input class="form-control" type="file" name="slider1" id="formFile">
                       <div class="img-preview mt-3">
-                        <img id="preview" loading="lazy" src="{{ $slider1->image_path ? asset('storage/' . $slider1->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Stonytrack">
+                        <img id="preview" loading="lazy" src="{{ $slider1->image_path ? asset('storage/' . $slider1->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Osudbd">
                         <a class="remove_slider_item" id="remove_slider_item1" href="javascript:void(0)"><i class="bx bxs-message-square-x"></i></a>
                       </div>
                     </div>
@@ -59,7 +59,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="contact_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/contact-us"
+                        <input name="contact_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/contact-us"
                           aria-label="contact" aria-describedby="basic-icon-default-email2" value="{{ $slider1->contact_url }}" />
                       </div>
                     </div>
@@ -69,7 +69,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="services_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/services"
+                        <input name="services_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/services"
                           aria-label="services" aria-describedby="basic-icon-default-email2" value="{{ $slider1->services_url }}" />
                       </div>
                     </div>
@@ -83,7 +83,7 @@
                     <div class="col-sm-9">
                     <input class="form-control" type="file" name="slider2" id="formFile">
                       <div class="img-preview mt-3">
-                      <img id="preview" loading="lazy" src="{{ $slider2->image_path ? asset('storage/' . $slider2->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Stonytrack">
+                      <img id="preview" loading="lazy" src="{{ $slider2->image_path ? asset('storage/' . $slider2->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Osudbd">
                         <a class="remove_slider_item" id="remove_slider_item2" href="javascript:void(0)"><i class="bx bxs-message-square-x"></i></a>
                       </div>
                     </div>
@@ -115,7 +115,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="contact_url2" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/contact-us"
+                        <input name="contact_url2" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/contact-us"
                           aria-label="contact" aria-describedby="basic-icon-default-email2" value="{{ $slider2->contact_url }}" />
                       </div>
                     </div>
@@ -125,7 +125,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="services_url2" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/services"
+                        <input name="services_url2" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/services"
                           aria-label="services" aria-describedby="basic-icon-default-email2" value="{{ $slider2->services_url }}" />
                       </div>
                     </div>
@@ -139,7 +139,7 @@
                     <div class="col-sm-9">
                     <input class="form-control" type="file" name="slider3" id="formFile">
                       <div class="img-preview mt-3">
-                      <img id="preview" loading="lazy" src="{{ $slider3->image_path ? asset('storage/' . $slider3->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Stonytrack">
+                      <img id="preview" loading="lazy" src="{{ $slider3->image_path ? asset('storage/' . $slider3->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Osudbd">
                         <a class="remove_slider_item" id="remove_slider_item3" href="javascript:void(0)"><i class="bx bxs-message-square-x"></i></a>
                       </div>
                     </div>
@@ -171,7 +171,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="contact_url3" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/contact-us"
+                        <input name="contact_url3" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/contact-us"
                           aria-label="contact" aria-describedby="basic-icon-default-email2" value="{{ $slider3->contact_url }}" />
                       </div>
                     </div>
@@ -181,7 +181,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="services_url3" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/services"
+                        <input name="services_url3" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/services"
                           aria-label="services" aria-describedby="basic-icon-default-email2" value="{{ $slider3->services_url }}" />
                       </div>
                     </div>
@@ -195,7 +195,7 @@
                     <div class="col-sm-9">
                     <input class="form-control" type="file" name="slider4" id="formFile">
                       <div class="img-preview mt-3">
-                        <img id="preview" loading="lazy" src="{{ $slider4->image_path ? asset('storage/' . $slider4->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Stonytrack">
+                        <img id="preview" loading="lazy" src="{{ $slider4->image_path ? asset('storage/' . $slider4->image_path) : asset('assets/admin/img/no-photo.png') }}" alt="Osudbd">
                         <a class="remove_slider_item" id="remove_slider_item4" href="javascript:void(0)"><i class="bx bxs-message-square-x"></i></a>
                       </div>
                     </div>
@@ -227,7 +227,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="contact_url4" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/contact-us"
+                        <input name="contact_url4" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/contact-us"
                           aria-label="contact" aria-describedby="basic-icon-default-email2" value="{{ $slider4->contact_url }}" />
                       </div>
                     </div>
@@ -237,7 +237,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="services_url4" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/services"
+                        <input name="services_url4" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/services"
                           aria-label="services" aria-describedby="basic-icon-default-email2" value="{{ $slider4->services_url }}" />
                       </div>
                     </div>

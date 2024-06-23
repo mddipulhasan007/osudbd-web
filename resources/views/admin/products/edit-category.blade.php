@@ -5,17 +5,17 @@
   <!-- Content -->
 
   <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Edit Category</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Edit Product Category</h4>
 
     <!-- Basic Layout & Basic with Icons -->
-    <h2>Edit Category</h2>
+    <h2>Edit Product Category</h2>
 
-    <form method="post" action="{{ route('editcategory', ['id' => $category->id]) }}" enctype="multipart/form-data">
+    <form method="post" action="{{ route('editproductcategory', ['id' => $productcategory->id]) }}" enctype="multipart/form-data">
       @csrf
 
         <div class="form-group mb-5">
-            <label for="name">Category Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Category Name" value="{{ old('name', $category->name ?? '') }}" required>
+            <label for="name">Product Category Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter product category name" value="{{ old('name', $productcategory->name ?? '') }}" required>
         </div>
 
         <div class="row mb-5 mt-5">
@@ -23,11 +23,11 @@
           <div class="col-sm-10">
             <input class="form-control" type="file" name="cat_image" id="formFile" onchange="previewImage()" required>
             <div class="brand-logo img-preview mt-3">
-                @if(isset($category) && $category->cat_image)
+                @if(isset($productcategory) && $productcategory->cat_image)
                     <img
                         id="preview"
                         loading="lazy"
-                        src="{{ asset('storage/' . $category->cat_image) }}"
+                        src="{{ asset('storage/' . $productcategory->cat_image) }}"
                         width="200" height="200"
                         alt="Category Image"
                     />
@@ -44,7 +44,7 @@
         </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Update Category</button>
+        <button type="submit" class="btn btn-primary">Update Product Category</button>
     </form>
      
 

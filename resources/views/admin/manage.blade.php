@@ -786,7 +786,7 @@
       <div class="table-responsive text-nowrap">
         <table class="table">
           <caption class="ms-4">
-            List of Projects
+            List of Manufacture
           </caption>
           <thead>
             <tr>
@@ -2060,7 +2060,7 @@
       <table class="table card-table">
         <thead>
           <tr>
-            <th>Project</th>
+            <th>Manufacture</th>
             <th>Client</th>
             <th>Users</th>
             <th>Status</th>

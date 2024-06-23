@@ -1,6 +1,6 @@
 @include('layout.frontend.header')
 
-    <h1>Project Categories</h1>
+    <h1>Manufacture Categories</h1>
 
     <ul>
         @foreach($categories as $category)

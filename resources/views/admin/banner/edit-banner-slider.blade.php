@@ -29,7 +29,7 @@
                       <div class="img-preview mt-3">
                         <img id="preview" loading="lazy" 
                         src="{{ $bannerPath ? asset('storage/' . $bannerPath) : asset('assets/admin/img/no-photo.png') }}"
-                         alt="Stonytrack">
+                         alt="Osudbd">
                       </div>
                     </div>
                   </div>
@@ -60,7 +60,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="services_url" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/categories/fire-protection-system"
+                        <input name="services_url" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/categories/fire-protection-system"
                           aria-label="services" aria-describedby="basic-icon-default-email2" value="{{ $banner->services_url }}" />
                       </div>
                     </div>
@@ -70,7 +70,7 @@
                     <div class="col-sm-9">
                       <div class="input-group input-group-merge">
                         <span class="input-group-text"><i class="bx bx-text"></i></span>
-                        <input name="contact_url" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://stonytrack.com/contact"
+                        <input name="contact_url" type="text" id="basic-icon-default-email" class="form-control" placeholder="https://Osudbd.com/contact"
                           aria-label="contact" aria-describedby="basic-icon-default-email2" value="{{ $banner->contact_url }}" />
                       </div>
                     </div>

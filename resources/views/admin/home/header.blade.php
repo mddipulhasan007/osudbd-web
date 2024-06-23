@@ -30,7 +30,7 @@
                           loading="lazy"
                           src="{{ $header && $header->logo ? asset('storage/' . $header->logo) : asset('assets/admin/img/no-photo.png') }}"
                           width="100%"
-                          alt="Stonytrack"
+                          alt="Osudbd"
                       />
                     </div>
                   </div>
@@ -40,8 +40,8 @@
                 <div class="col-sm-9">
                   <div class="input-group input-group-merge">
                     <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                    <input name="contact_email" type="text" id="basic-icon-default-email" class="form-control" placeholder="contact@stonytrack.com"
-                      aria-label="contact@stonytrack.com" aria-describedby="basic-icon-default-email2" value="{{ $header->contact_email ?? '' }}" />
+                    <input name="contact_email" type="text" id="basic-icon-default-email" class="form-control" placeholder="contact@Osudbd.com"
+                      aria-label="contact@Osudbd.com" aria-describedby="basic-icon-default-email2" value="{{ $header->contact_email ?? '' }}" />
                   </div>
                 </div>
               </div>

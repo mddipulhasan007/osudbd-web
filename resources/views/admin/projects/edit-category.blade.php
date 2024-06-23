@@ -37,7 +37,7 @@
                         loading="lazy"
                         src="{{ asset('assets/admin/img/no-photo.png') }}"
                         width="200" height="200"
-                        alt="Stonytrack"
+                        alt="Osudbd"
                     />
                 @endif
             </div>

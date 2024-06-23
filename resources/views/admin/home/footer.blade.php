@@ -30,7 +30,7 @@
                         loading="lazy"
                         src="{{ $footer && $footer->logo ? asset('storage/' . $footer->logo) : asset('assets/admin/img/no-photo.png') }}"
                         width="100%"
-                        alt="Stonytrack"
+                        alt="Osudbd"
                       />
                     </div>
                   </div>
@@ -60,8 +60,8 @@
                   <div class="col-sm-8">
                     <div class="input-group input-group-merge">
                       <span class="input-group-text"><i class="bx bx-text"></i></span>
-                      <input name="s_menu_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://stonytrack.com/link"
-                        aria-label="http://stonytrack.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->s_menu_url1 ?? '' }}" />
+                      <input name="s_menu_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://Osudbd.com/link"
+                        aria-label="http://Osudbd.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->s_menu_url1 ?? '' }}" />
                     </div>
                   </div>
                 </div>
@@ -70,8 +70,8 @@
                   <div class="col-sm-8">
                     <div class="input-group input-group-merge">
                       <span class="input-group-text"><i class="bx bx-text"></i></span>
-                      <input name="s_menu_url2" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://stonytrack.com/link"
-                        aria-label="http://stonytrack.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->s_menu_url2 ?? '' }}" />
+                      <input name="s_menu_url2" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://Osudbd.com/link"
+                        aria-label="http://Osudbd.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->s_menu_url2 ?? '' }}" />
                     </div>
                   </div>
                 </div>
@@ -80,8 +80,8 @@
                   <div class="col-sm-8">
                     <div class="input-group input-group-merge">
                       <span class="input-group-text"><i class="bx bx-text"></i></span>
-                      <input name="s_menu_url3" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://stonytrack.com/link"
-                        aria-label="http://stonytrack.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->s_menu_url3 ?? '' }}" />
+                      <input name="s_menu_url3" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://Osudbd.com/link"
+                        aria-label="http://Osudbd.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->s_menu_url3 ?? '' }}" />
                     </div>
                   </div>
                 </div>
@@ -91,7 +91,7 @@
                     <div class="input-group input-group-merge">
                       <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-text"></i></span>
                       <input name="s_menu_url4" type="text" id="basic-icon-default-phone" class="form-control phone-mask"
-                        placeholder="http://stonytrack.com/link" aria-label="http://stonytrack.com/link"
+                        placeholder="http://Osudbd.com/link" aria-label="http://Osudbd.com/link"
                         aria-describedby="basic-icon-default-phone2" value="{{ $footer->s_menu_url4 ?? '' }}" />
                     </div>
                   </div>
@@ -102,7 +102,7 @@
                     <div class="input-group input-group-merge">
                       <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-text"></i></span>
                       <input name="s_menu_url5" type="text" id="basic-icon-default-phone" class="form-control phone-mask"
-                        placeholder="http://stonytrack.com/link" aria-label="http://stonytrack.com/link"
+                        placeholder="http://Osudbd.com/link" aria-label="http://Osudbd.com/link"
                         aria-describedby="basic-icon-default-phone2" value="{{ $footer->s_menu_url5 ?? '' }}" />
                     </div>
                   </div>
@@ -113,7 +113,7 @@
                     <div class="input-group input-group-merge">
                       <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-text"></i></span>
                       <input name="s_menu_url6" type="text" id="basic-icon-default-phone" class="form-control phone-mask"
-                        placeholder="http://stonytrack.com/link" aria-label="http://stonytrack.com/link"
+                        placeholder="http://Osudbd.com/link" aria-label="http://Osudbd.com/link"
                         aria-describedby="basic-icon-default-phone2" value="{{ $footer->s_menu_url6 ?? '' }}" />
                     </div>
                   </div>
@@ -149,8 +149,8 @@
                   <div class="col-sm-10">
                     <div class="input-group input-group-merge">
                       <span class="input-group-text"><i class="bx bx-text"></i></span>
-                      <input name="foo_menu_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://stonytrack.com/link"
-                        aria-label="http://stonytrack.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->foo_menu_url1 ?? '' }}" />
+                      <input name="foo_menu_url1" type="text" id="basic-icon-default-email" class="form-control" placeholder="http://Osudbd.com/link"
+                        aria-label="http://Osudbd.com/link" aria-describedby="basic-icon-default-email2" value="{{ $footer->foo_menu_url1 ?? '' }}" />
                     </div>
                   </div>
                 </div>
@@ -160,7 +160,7 @@
                     <div class="input-group input-group-merge">
                       <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-text"></i></span>
                       <input name="foo_menu_url2" type="text" id="basic-icon-default-phone" class="form-control phone-mask"
-                        placeholder="http://stonytrack.com/link" aria-label="http://stonytrack.com/link"
+                        placeholder="http://Osudbd.com/link" aria-label="http://Osudbd.com/link"
                         aria-describedby="basic-icon-default-phone2" value="{{ $footer->foo_menu_url2 ?? '' }}" />
                     </div>
                   </div>
@@ -171,7 +171,7 @@
                     <div class="input-group input-group-merge">
                       <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-text"></i></span>
                       <input name="foo_menu_url3" type="text" id="basic-icon-default-phone" class="form-control phone-mask"
-                        placeholder="http://stonytrack.com/link" aria-label="http://stonytrack.com/link"
+                        placeholder="http://Osudbd.com/link" aria-label="http://Osudbd.com/link"
                         aria-describedby="basic-icon-default-phone2" value="{{ $footer->foo_menu_url3 ?? '' }}" />
                     </div>
                   </div>
@@ -182,7 +182,7 @@
                     <div class="input-group input-group-merge">
                       <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-text"></i></span>
                       <input name="foo_menu_url4" type="text" id="basic-icon-default-phone" class="form-control phone-mask"
-                        placeholder="http://stonytrack.com/link" aria-label="http://stonytrack.com/link"
+                        placeholder="http://Osudbd.com/link" aria-label="http://Osudbd.com/link"
                         aria-describedby="basic-icon-default-phone2" value="{{ $footer->foo_menu_url4 ?? '' }}" />
                     </div>
                   </div>

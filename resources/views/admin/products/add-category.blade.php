@@ -4,18 +4,20 @@
 <div class="content-wrapper">
   <!-- Content -->
 
-  <div class="container-xxl flex-grow-1 container-p-y">Product
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Add New Product</h4>
+  <div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">All/</span> Add Product Category</h4>
 
     <!-- Basic Layout & Basic with Icons -->
     <h2>Add Category</h2>
 
-    <form method="post" action="{{ route('addprojectcategory') }}" enctype="multipart/form-data">
+    <form method="post" action="{{ route('addproductcategory') }}" enctype="multipart/form-data">
         @csrf
 
-        <div class="form-group mb-5">
-            <label for="name">Category New Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Category Name" required>
+        <div class="form-group row mb-5">
+            <label class="col-sm-2 col-form-label" for="name">Category Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter product category name" required>
+            </div>
         </div>
 
         <div class="row mb-5 mt-5">
@@ -34,7 +36,7 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Add Category</button>
+        <button type="submit" class="btn btn-primary">Add Product Category</button>
     </form>
   </div>
   <!-- / Content -->

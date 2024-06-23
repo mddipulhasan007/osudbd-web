@@ -73,7 +73,7 @@
                           loading="lazy"
                           src="{{ $serviceContent && $serviceContent->service_img ? asset('storage/' . $serviceContent->service_img) : asset('assets/admin/img/no-photo.png') }}"
                           width="100%"
-                          alt="Stonytrack"
+                          alt="Osudbd"
                       />
                     </div>
                   </div>

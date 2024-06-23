@@ -6,12 +6,12 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="banner-heading">
-                <h1 class="banner-title">Project</h1>
+                <h1 class="banner-title">Manufacture</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Project</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Projects Single</li>
+                    <li class="breadcrumb-item"><a href="#">Manufacture</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Manufacture Single</li>
                   </ol>
                 </nav>
               </div>

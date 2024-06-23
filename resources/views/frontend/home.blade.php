@@ -39,7 +39,7 @@
       </div><!-- Container end -->
     </section><!-- Action end -->
 
-    <section id="ts-features" class="ts-features solid-bg">
+    <section id="ts-features" class="ts-features solid-bg d-none">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -169,7 +169,7 @@
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="1789">0</span></h2>
-                <h3 class="ts-facts-title">Total Projects</h3>
+                <h3 class="ts-facts-title">Total Manufacture</h3>
               </div>
             </div><!-- Col end -->
 
@@ -210,7 +210,7 @@
       <!--/ Container end -->
     </section><!-- Facts end -->
 
-    <section id="ts-service-area" class="ts-service-area pb-0">
+    <section id="ts-service-area" class="ts-service-area pb-0 d-none">
       <div class="container">
         <div class="row text-center">
           <div class="col-12">
@@ -290,12 +290,12 @@
       <!--/ Container end -->
     </section><!-- Service end -->
 
-    <section id="project-area" class="project-area solid-bg">
+    <section id="project-area" class="project-area solid-bg d-none">
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-12">
             <h2 class="section-title">Work of Excellence</h2>
-            <h3 class="section-sub-title">Our Projects</h3>
+            <h3 class="section-sub-title">Our Manufactures</h3>
           </div>
         </div>
         <!--/ Title row end -->
@@ -305,13 +305,13 @@
             <div class="shuffle-btn-group">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All Project</a>
+                  <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All Manufactures</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-ongoing-tab" data-toggle="pill" href="#pills-ongoing" role="tab" aria-controls="pills-ongoing" aria-selected="true">Ongoing</a>
+                  <a class="nav-link" id="pills-ongoing-tab" data-toggle="pill" href="#pills-ongoing" role="tab" aria-controls="pills-ongoing" aria-selected="true">Bangladesh</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-completed-tab" data-toggle="pill" href="#pills-completed" role="tab" aria-controls="pills-completed" aria-selected="false">Completed</a>
+                  <a class="nav-link" id="pills-completed-tab" data-toggle="pill" href="#pills-completed" role="tab" aria-controls="pills-completed" aria-selected="false">Global</a>
                 </li>
               </ul>
 
@@ -388,7 +388,7 @@
            
           <div class="col-12">
             <div class="general-btn text-center">
-              <a class="btn btn-primary" href="{{ ('projects') }}">View All Projects</a>
+              <a class="btn btn-primary" href="{{ ('projects') }}">View All Manufacture</a>
             </div>
           </div>
 
@@ -525,7 +525,7 @@
       <!--/ Container end -->
     </section><!-- Content end -->
 
-    <section class="d-none subscribe no-padding">
+    <section class="d-none subscribe no-padding d-none">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -571,7 +571,7 @@
       </section>
     </div>
 
-    <section id="news" class="news">
+    <section id="news" class="news d-none">
       <div class="container">
         <div class="row text-center">
           <div class="col-12">
@@ -609,7 +609,7 @@
         <!--/ Content row end -->
 
         <div class="general-btn text-center mt-4 d-none">
-          <a class="btn btn-primary" href="{{ ('projects') }}">See All Project</a>
+          <a class="btn btn-primary" href="{{ ('projects') }}">See All Manufacture</a>
         </div>
 
       </div>

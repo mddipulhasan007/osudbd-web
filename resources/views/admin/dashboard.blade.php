@@ -10,7 +10,7 @@
                   <div class="d-flex align-items-end row">
                     <div class="col-sm-7">
                       <div class="card-body">
-                        <h5 class="card-title text-primary">Congratulations Stonytrack! 🎉</h5>
+                        <h5 class="card-title text-primary">Congratulations Osudbd! 🎉</h5>
                         <p class="mb-4">
                           You have done <span class="fw-bold">99%</span> more sales today. Check your new badge in
                           your profile.
@@ -68,7 +68,7 @@
                             
                           </div>
                         </div>
-                        <span>District Experience</span>
+                        <span>Area Experience</span>
                         <h3 class="card-title text-nowrap mb-1">{{ $aboutPage->dist_exp_count }}</h3>
                         <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
                       </div>
@@ -145,7 +145,7 @@
                             
                           </div>
                         </div>
-                        <span class="d-block mb-1">Running Projects</span>
+                        <span class="d-block mb-1">Running Manufacture</span>
                         <h3 class="card-title text-nowrap mb-2">{{ $aboutPage->running_project_count }}</h3>
                         <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small>
                       </div>

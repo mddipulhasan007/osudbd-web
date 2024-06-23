@@ -19,7 +19,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb2">
                     <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{{ url('/projects') }}">Projects</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/projects') }}">Manufacture</a></li>
                     <li class="breadcrumb-item">{{ $project->title }}</li>
                 </ol>
             </nav>

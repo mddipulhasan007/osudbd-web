@@ -30,7 +30,7 @@
                         loading="lazy"
                         src="{{ asset('storage/' . $brand->logo) }}"
                         width="100%"
-                        alt="Stonytrack"
+                        alt="Osudbd"
                     />
                     </div>
                   </div>

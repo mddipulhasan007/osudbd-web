@@ -50,7 +50,7 @@
                                 loading="lazy"
                                 src="{{ isset($profilePath) ? asset('storage/' . $profilePath) : asset('assets/admin/img/no-photo.png') }}"
                                 width="100%"
-                                alt="Stonytrack"
+                                alt="Osudbd"
                             />
                         </div>
                     </div>

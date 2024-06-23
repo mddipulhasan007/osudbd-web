@@ -82,7 +82,7 @@
             <br/>
             <div class="col-md-6">
               <div class="border d-flex align-items-center justify-content-center">
-                <a class="btn btn-info" target="_blank" href="https://stonytrack.com/pdf/Stony_Track_Ltd._Company_Profile.pdf">
+                <a class="btn btn-info" target="_blank" href="https://Osudbd.com/pdf/Stony_Track_Ltd._Company_Profile.pdf">
                   <h4 class="text-white">View PDF</h4>
                   <img height="400" src="{{ asset('assets/images/view-profile.png') }}" alt="PDF View">
                 </a>
@@ -90,7 +90,7 @@
             </div>
             <div class="col-md-6">
               <div class="border d-flex align-items-center justify-content-center" style="height:450px;">
-               <a class="btn btn-primary" href="https://stonytrack.com/pdf/Stony_Track_Ltd._Company_Profile.pdf" download="Stony_Track_Ltd_Company_Profile.pdf">Download PDF</a>
+               <a class="btn btn-primary" href="https://Osudbd.com/pdf/Stony_Track_Ltd._Company_Profile.pdf" download="Stony_Track_Ltd_Company_Profile.pdf">Download PDF</a>
               </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="{{ $aboutPage->total_projects_count ?? '' }}">0</span>+</h2>
-                <h3 class="ts-facts-title">Total Projects</h3>
+                <h3 class="ts-facts-title">Total Manufacture</h3>
               </div>
             </div><!-- Col end -->
 
@@ -129,7 +129,7 @@
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="{{ $aboutPage->running_project_count ?? '' }}">0</span>+</h2>
-                <h3 class="ts-facts-title">Running of Projects</h3>
+                <h3 class="ts-facts-title">Running of Manufacture</h3>
               </div>
             </div><!-- Col end -->
 
@@ -155,7 +155,7 @@
         <div class="row text-center">
           <div class="col-lg-12">
             <h2 class="section-title">Quality Service</h2>
-            <h3 class="section-sub-title">Professional Team</h3>
+            <h3 class="section-sub-title">Osud BD Team</h3>
           </div>
         </div><!--/ Title row end -->
 

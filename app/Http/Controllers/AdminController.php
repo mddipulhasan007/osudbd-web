@@ -33,6 +33,10 @@ use App\Models\Team;
 use App\Models\Project;
 use App\Models\ProjectCategory;
 
+use App\Models\Product;
+use App\Models\ProductCategory;
+use App\Models\ProductType;
+
 class AdminController extends Controller
 {
     /**
@@ -55,6 +59,263 @@ class AdminController extends Controller
         $aboutPage = AboutPage::firstOrNew();
         return view('admin.index', compact('aboutPage'));
     }
+
+    // Products
+    public function products(Request $request)
+    {
+        $products = Product::all();
+        return view('admin.products.index', compact('products'));
+    }
+
+    public function addproduct(Request $request)
+    {
+        if ($request->isMethod('post')) {
+            $request->validate([
+                'title' => 'required|string|max:255',
+                'content' => 'required|string',
+                'feature_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'squ_no' => 'nullable|string',
+                'qty' => 'nullable|integer',
+                'company_name' => 'nullable|string',
+                'regular_price' => 'nullable|numeric',
+                'offer_price' => 'nullable|numeric',
+                'offer_percent' => 'nullable|numeric',
+                'category_id' => 'required|exists:product_categories,id',
+                'type_id' => 'required|exists:product_types,id',
+            ]);
+
+            // Check if a product with the same title exists
+            $existingProduct = Product::where('title', $request->input('title'))->first();
+            if ($existingProduct) {
+                return redirect()->back()->withErrors(['title' => 'This product already exists. Please upload a different product.'])->withInput();
+            }
+
+            $featureImagePath = $request->file('feature_image') ? $request->file('feature_image')->store('productsimages', 'public') : null;
+
+            // Generate a unique slug
+            $slug = Str::slug($request->input('title'));
+            $count = 1;
+            while (Product::where('slug', $slug)->exists()) {
+                $slug = Str::slug($request->input('title')) . '-' . $count++;
+            }
+
+            Product::create([
+                'title' => $request->input('title'),
+                'slug' => Str::slug($request->input('title')),
+                'content' => $request->input('content'),
+                'feature_image' => $featureImagePath,
+                'squ_no' => $request->input('squ_no'),
+                'qty' => $request->input('qty'),
+                'company_name' => $request->input('company_name'),
+                'regular_price' => $request->input('regular_price'),
+                'offer_price' => $request->input('offer_price'),
+                'offer_percent' => $request->input('offer_percent'),
+                'category_id' => $request->input('category_id'),
+                'type_id' => $request->input('type_id'),
+            ]);
+
+            return redirect()->route('products')->with('success', 'Product added successfully');
+        }
+
+        $productcategories = ProductCategory::all();
+        $producttypes = ProductType::all();
+
+        return view('admin.products.add-product', compact('productcategories', 'producttypes'));
+    }
+    public function editproduct(Request $request, $id)
+    {
+        // Find the product by ID
+        $product = Product::findOrFail($id);
+
+        if ($request->isMethod('post')) {
+            $request->validate([
+                'title' => 'required|string|max:255',
+                'content' => 'required|string',
+                'feature_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'squ_no' => 'nullable|string',
+                'qty' => 'nullable|integer',
+                'company_name' => 'nullable|string',
+                'regular_price' => 'nullable|numeric',
+                'offer_price' => 'nullable|numeric',
+                'offer_percent' => 'nullable|numeric',
+                'category_id' => 'required|exists:product_categories,id',
+                'type_id' => 'required|exists:product_types,id',
+            ]);
+
+            // Check if a product with the same title exists
+            $existingProduct = Product::where('title', $request->input('title'))->where('id', '!=', $id)->first();
+            if ($existingProduct) {
+                return redirect()->back()->withErrors(['title' => 'This product already exists. Please upload a different product.'])->withInput();
+            }
+
+            // Update product data
+            $productData = [
+                'title' => $request->input('title'),
+                'slug' => Str::slug($request->input('title')),
+                'content' => $request->input('content'),
+                'squ_no' => $request->input('squ_no'),
+                'qty' => $request->input('qty'),
+                'company_name' => $request->input('company_name'),
+                'regular_price' => $request->input('regular_price'),
+                'offer_price' => $request->input('offer_price'),
+                'offer_percent' => $request->input('offer_percent'),
+                'category_id' => $request->input('category_id'),
+                'type_id' => $request->input('type_id'),
+            ];
+
+            // Update feature image if provided
+            if ($request->hasFile('feature_image')) {
+                // Upload feature image and save to the database
+                $featureImagePath = $request->file('feature_image')->store('productsimages', 'public');
+                $productData['feature_image'] = $featureImagePath;
+            }
+
+            // Update the product
+            $product->update($productData);
+
+            return redirect()->route('products')->with('success', 'Product updated successfully');
+        }
+
+        // Fetch categories and types to be used in the form
+        $productcategories = ProductCategory::all();
+        $producttypes = ProductType::all();
+
+        return view('admin.products.edit-product', compact('product', 'productcategories', 'producttypes'));
+    }
+
+    public function removeproduct($id)
+    {
+        $product = Product::findOrFail($id);
+        $product->delete();
+
+        return redirect()->route('products')->with('success', 'Product removed successfully.');
+    }
+
+    public function productcategories(Request $request)
+    {
+        $productcategories = ProductCategory::all();
+        return view('admin.products.cat-manage', compact('productcategories'));
+    }
+
+    public function addproductcategory(Request $request)
+    {
+        if ($request->isMethod('post')) {
+            $request->validate([
+                'name' => 'required|string|unique:product_categories,name|max:255',
+                'cat_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+
+            // Handle the image upload
+            $catImagePath = null;
+            if ($request->hasFile('cat_image')) {
+                $catImagePath = $request->file('cat_image')->store('productscategories', 'public');
+            }
+
+            // Create the new product category
+            ProductCategory::create([
+                'name' => $request->input('name'),
+                'slug' => Str::slug($request->input('name')),
+                'cat_image' => $catImagePath,
+            ]);
+
+            return redirect()->route('productcategories')->with('success', 'Category added successfully');
+        }
+
+        return view('admin.products.add-category');
+    }
+
+    public function editproductcategory(Request $request, $id)
+    {
+        $productcategory = ProductCategory::findOrFail($id);
+
+        if ($request->isMethod('post')) {
+            $request->validate([
+                'cat_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'name' => 'required|string|unique:categories,name,' . $productcategory->id,
+            ]);
+
+            $catImagePath = $request->file('cat_image')->store('productscategories', 'public');
+
+            $productcategory->update([
+                'cat_image' => $catImagePath,
+                'name' => $request->input('name'),  // You can remove this line to keep the original name
+                'slug' => Str::slug($request->input('name')),
+            ]);
+
+            return redirect()->route('productcategories')->with('success', 'Category updated successfully');
+        }
+
+        return view('admin.products.edit-category', ['productcategory' => $productcategory]);
+    }
+
+    public function removeproductcategory($id)
+    {
+        $category = ProductCategory::findOrFail($id);
+        $category->delete();
+
+        return redirect()->route('productcategories')->with('success', 'Category removed successfully.');
+    }
+
+    public function producttypes(Request $request)
+    {
+        $producttypes = ProductType::all();
+        return view('admin.products.type-manage', compact('producttypes'));
+    }
+
+    public function addproducttype(Request $request)
+    {
+        if ($request->isMethod('post')) {
+            $request->validate([
+                'type_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'name' => 'required|string|unique:product_types,name',
+            ]);
+
+            $typeImagePath = $request->file('type_image')->store('producttypes', 'public');
+
+            ProductType::create([
+                'type_image' => $typeImagePath,
+                'name' => $request->input('name'),
+                'slug' => Str::slug($request->input('name')),
+            ]);
+
+            return redirect()->route('producttypes')->with('success', 'Type added successfully');
+        }
+
+        return view('admin.products.add-type');
+    }
+
+    public function editproducttype(Request $request, $id)
+    {
+        $producttype = ProductType::findOrFail($id);
+
+        if ($request->isMethod('post')) {
+            $request->validate([
+                'type_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'name' => 'required|string|unique:categories,name,' . $producttype->id,
+            ]);
+
+            $typeImagePath = $request->file('type_image')->store('producttypes', 'public');
+
+            $producttype->update([
+                'type_image' => $typeImagePath,
+                'name' => $request->input('name'),  // You can remove this line to keep the original name
+                'slug' => Str::slug($request->input('name')),
+            ]);
+
+            return redirect()->route('producttypes')->with('success', 'Type updated successfully');
+        }
+
+        return view('admin.products.edit-type', ['producttype' => $producttype]);
+    }
+
+    public function removeproducttype($id)
+    {
+        $type = ProductType::findOrFail($id);
+        $type->delete();
+
+        return redirect()->route('producttypes')->with('success', 'Type removed successfully.');
+    }
+
 
     public function header(Request $request)
     {

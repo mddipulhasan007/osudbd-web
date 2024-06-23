@@ -68,15 +68,12 @@
 
         <div class="google-map d-none">
           <div id="map" class="map" data-latitude="40.712776" data-longitude="-74.005974"
-            data-marker="images/marker.png" data-marker-name="Stonytrack"></div>
+            data-marker="images/marker.png" data-marker-name="Osudbd"></div>
         </div>
 
         <div class="container">
           <div class="row">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.4151378404363!2d90.3555173027892!3d23.77020837858914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0af3853a557%3A0xf7ec701d06fe56fc!2sStony%20Track%20Ltd.!5e0!3m2!1sbn!2sbd!4v1693042385176!5m2!1sbn!2sbd"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.5960281703738!2d90.3442709750738!3d23.79739558697097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c194667fd715%3A0x73bf551fcfaa425c!2z4Kau4Ka_4Kaw4Kaq4KeB4KawIOCmruCmvuCmnOCmvuCmsCDgprDgp4vgpqEg4Kau4Ka44Kac4Ka_4Kam!5e0!3m2!1sbn!2sbd!4v1719125152931!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
@@ -86,7 +83,7 @@
           <div class="col-md-12">
             <h3 class="column-title">Contact Us / Send Your Message</h3>
             <!-- contact form works with formspree.io  -->
-            <!-- contact form activation doc: https://docs.themefisher.com/Stonytrack/contact-form/ -->
+            <!-- contact form activation doc: https://docs.themefisher.com/Osudbd/contact-form/ -->
               <form id="contact-form" action="{{ route('contact.store') }}" method="post" role="form">
               @csrf
               <div class="error-container"></div>

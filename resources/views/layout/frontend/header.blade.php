@@ -8,7 +8,7 @@
   <meta name="description" content="Industrial Services">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name=author content=">
-  <meta name=generator content= Stonytrack v1.0">
+  <meta name=generator content= Osudbd v1.0">
   <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
   <!-- CSS
 ================================================== -->
@@ -78,9 +78,9 @@
               <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
               <a class="d-block" href="{{ url('/') }}">
                   @if($header && $header->logo)
-                      <img loading="lazy" src="{{ asset('storage/' . $header->logo) }}" alt="Stonytrack">
+                      <img loading="lazy" src="{{ asset('storage/' . $header->logo) }}" alt="Osudbd">
                   @else
-                      <img loading="lazy" src="{{ asset('assets/images/logo/logo.png') }}" alt="Stonytrack">
+                      <img loading="lazy" src="{{ asset('assets/images/logo/logo.png') }}" alt="Osudbd">
                   @endif
               </a>
               </div><!-- logo end -->
@@ -156,24 +156,24 @@
                     </li>
                 
                     <li class="nav-item {{ request()->is('about') ? 'active' : '' }}">
-                        <a href="{{ url('/about') }}" class="nav-link">About Us</a>
+                        <a href="#" class="nav-link">About Us</a>
                     </li>
                 
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Products & Services <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" role="menu">
+                        <!-- <ul class="dropdown-menu" role="menu">
                             @foreach($categories as $category)
                                 <li><a href="{{ route('categories.show', $category->slug) }}">{{ $category->name }}</a></li>
                             @endforeach
-                        </ul>
+                        </ul> -->
                     </li>
                 
                     <li class="nav-item {{ request()->is('projects') ? 'active' : '' }}">
-                        <a href="{{ url('/projects') }}" class="nav-link">Projects</a>
+                        <a href="#" class="nav-link">Manufactures</a>
                     </li>
                 
                     <li class="nav-item {{ request()->is('medianews') ? 'active' : '' }}">
-                        <a href="{{ url('/medianews') }}" class="nav-link">Media & News </a>
+                        <a href="#" class="nav-link">Media & News </a>
                     </li>
                 
                     <li class="nav-item {{ request()->is('contact') ? 'active' : '' }}">

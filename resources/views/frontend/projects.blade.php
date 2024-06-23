@@ -6,7 +6,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="banner-heading">
-                <h1 class="banner-title">Project</h1>
+                <h1 class="banner-title">Manufacture</h1>
               </div>
             </div><!-- Col end -->
           </div><!-- Row end -->
@@ -21,7 +21,7 @@
             <div class="shuffle-btn-group">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All Project</a>
+                  <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All Manufacture</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="pills-ongoing-tab" data-toggle="pill" href="#pills-ongoing" role="tab" aria-controls="pills-ongoing" aria-selected="true">Ongoing</a>

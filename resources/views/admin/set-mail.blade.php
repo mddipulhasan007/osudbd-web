@@ -15,7 +15,7 @@
 
         <div class="form-group mb-4">
             <label>Email Set</label>
-            <input type="text" class="form-control" name="email" required placeholder="admin@stonytrack.com" value="{{ $setemail ? $setemail->email : '' }}">
+            <input type="text" class="form-control" name="email" required placeholder="admin@Osudbd.com" value="{{ $setemail ? $setemail->email : '' }}">
         </div>
 
         <button type="submit" class="btn btn-primary">Save</button>
